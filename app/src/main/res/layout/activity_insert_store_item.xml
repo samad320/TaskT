@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".InsertStoreItemActivity">
+
+    <TextView
+        android:id="@+id/textViewStoreItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Store Item Name:" />
+
+    <EditText
+        android:id="@+id/editTextStoreItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewStoreItemName"
+        android:layout_marginTop="8dp"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textViewItemMRP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextStoreItemName"
+        android:layout_marginTop="16dp"
+        android:text="Item MRP:" />
+
+    <EditText
+        android:id="@+id/editTextItemMRP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewItemMRP"
+        android:layout_marginTop="8dp"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textViewSellingPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextItemMRP"
+        android:layout_marginTop="16dp"
+        android:text="Selling Price:" />
+
+    <EditText
+        android:id="@+id/editTextSellingPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSellingPrice"
+        android:layout_marginTop="8dp"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/buttonInsert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSellingPrice"
+        android:layout_marginTop="50dp"
+    android:text="Insert Item" />
+</RelativeLayout>
